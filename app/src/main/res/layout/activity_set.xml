@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetActivity"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
+
+    <LinearLayout
+        android:id="@+id/temp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/h_temptv"
+            android:layout_width="95dp"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="最大温度值:"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/h_temp"
+            android:layout_width="0dp"
+            android:layout_height="63dp"
+            android:layout_alignTop="@+id/h_temptv"
+            android:layout_toEndOf="@+id/h_temptv"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="63dp"
+            android:layout_alignTop="@+id/h_temptv"
+            android:layout_toEndOf="@+id/h_temp"
+            android:text="℃"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/temp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/l_temptv"
+            android:layout_width="176dp"
+            android:layout_height="63dp"
+            android:gravity="center"
+            android:text="最小温度值:"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/l_temp"
+            android:layout_width="92dp"
+            android:layout_height="63dp"
+            android:layout_alignTop="@+id/l_temptv"
+            android:layout_toEndOf="@+id/l_temptv"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_alignTop="@+id/l_temptv"
+            android:layout_toEndOf="@+id/l_temp"
+            android:gravity="center"
+            android:text="℃"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ill1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/h_illtv"
+            android:layout_width="176dp"
+            android:layout_height="63dp"
+            android:gravity="center"
+            android:text="最大光照度:"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/h_ill"
+            android:layout_width="92dp"
+            android:layout_height="63dp"
+            android:layout_alignTop="@+id/h_illtv"
+            android:layout_toEndOf="@+id/h_illtv"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_alignTop="@+id/h_illtv"
+            android:layout_toEndOf="@+id/h_ill"
+            android:text="lux"
+            android:textSize="25sp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ill2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/l_illtv"
+            android:layout_width="176dp"
+            android:layout_height="63dp"
+            android:gravity="center"
+            android:text="最小光照度:"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/l_ill"
+            android:layout_width="92dp"
+            android:layout_height="63dp"
+            android:layout_alignTop="@+id/l_illtv"
+            android:layout_toEndOf="@+id/l_illtv"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_alignTop="@+id/l_illtv"
+            android:layout_toEndOf="@+id/l_ill"
+            android:gravity="center"
+            android:text="lux"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textSize="25sp"/>
+
+
+
+
+</LinearLayout>

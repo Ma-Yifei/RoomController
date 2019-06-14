@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AieconditionerActivity"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
+
+    <TextView
+        android:id="@+id/tv_xs"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="60dp"
+       android:text="25 ℃"
+        android:textSize="80sp"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/cz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/btn_dy"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/btn"
+            android:text="电源"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:button="@null"
+            android:textColor="@color/colorWhite"
+            />
+
+
+        <Button
+            android:id="@+id/btn_fs"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/btn_dy"
+
+            android:text="风速"
+            android:textSize="25sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn"/>
+
+        <Button
+            android:id="@+id/btn_zr"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/btn_dy"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:text="制热"
+            android:textSize="25sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn" />
+
+        <Button
+            android:id="@+id/btn_zl"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@+id/btn_fs"
+            android:layout_toRightOf="@+id/btn_zr"
+            android:layout_marginTop="20dp"
+            android:text="制冷"
+            android:textSize="25sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn" />
+
+        <Button
+            android:id="@+id/btn_sw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@+id/btn_zr"
+            android:layout_marginTop="20dp"
+            android:text="升温"
+            android:textSize="25sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn"/>
+
+        <Button
+            android:id="@+id/btn_jw"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@+id/btn_zl"
+            android:layout_toRightOf="@+id/btn_sw"
+            android:layout_marginTop="20dp"
+            android:text="降温"
+            android:textSize="25sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

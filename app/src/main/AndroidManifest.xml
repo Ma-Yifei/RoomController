@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.may.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="房间控制器"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AieconditionerActivity"
+            android:label="空调" />
+        <activity
+            android:name=".SwitchActivity"
+            android:label="开关" />
+        <activity
+            android:name=".SocketActivity"
+            android:label="插座" />
+        <activity
+            android:name=".Co2Activity"
+            android:label="二氧化碳"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".CurtainActivity"
+            android:label="窗帘" />
+        <activity
+            android:name=".HchoActivity"
+            android:label="甲醛"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".IllActivity"
+            android:label="光照度"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".PmActivity"
+            android:label="PM2.5"
+            android:screenOrientation="sensorLandscape" />
+
+        <activity
+            android:name=".THActivity"
+            android:label="温湿度"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name=".SetActivity"
+            android:label="智能环境"></activity>
+
+    </application>
+
+</manifest>
