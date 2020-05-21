@@ -103,13 +103,14 @@ public class Co2Activity extends AppCompatActivity {
                 SimpleDateFormat sdFormatter = new SimpleDateFormat("HH:mm:ss");
                 String retStrFormatNowDate = sdFormatter.format(nowTime);
 
-                Log.d("Mainactivity", "时间"+retStrFormatNowDate);
-                Log.d("Mainactivity", "二氧化碳浓度"+content);
+                Log.d("MainActivity", "时间"+retStrFormatNowDate);
+                Log.d("MainActivity", "二氧化碳浓度"+content);
 
                 xRay.add(retStrFormatNowDate);
                 mPoint.add(content);
 
             }while(cursor.moveToNext());
+
         }
         cursor.close();
 
